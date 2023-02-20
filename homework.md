@@ -34,12 +34,12 @@ You should find the views and models for querying in your DWH.
 
 You will need to complete "Visualising the data" videos, either using data studio or metabase. 
 
-- 89.9/10.1
+- **89.9/10.1**
 - 94/6
 - 76.3/23.7
 - 99.1/0.9
 
-
+**ANSWER** 89.9/10.1
 
 ### Question 3: 
 
@@ -77,19 +77,7 @@ Create a dashboard with some tiles that you find interesting to explore the data
 
 - March
 - April
-- January
+- **January**
 - December
 
-
-
-## Submitting the solutions
-
-* Form for submitting: https://forms.gle/6A94GPutZJTuT5Y16
-* You can submit your homework multiple times. In this case, only the last submission will be used. 
-
-Deadline: 25 February (Saturday), 22:00 CET
-
-
-## Solution
-
-We will publish the solution here
+**ANSWER**: January
