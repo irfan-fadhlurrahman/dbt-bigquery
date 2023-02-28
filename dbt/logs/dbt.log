@@ -24,3 +24,31 @@ Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
 Happy modeling!
 
 01:18:58.069554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10a476c4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10a476c3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10a476c490>]}
+
+
+============================== 2023-02-28 00:40:20.013496 | 179132d0-fb30-4000-9f02-f54866cbb897 ==============================
+00:40:20.013496 [info ] [MainThread]: Running with dbt=1.0.9
+00:40:20.013928 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name=None, skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
+00:40:20.014263 [debug] [MainThread]: Tracking: tracking
+00:40:20.021337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f505a0d7d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f505a0d7f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f505a0d7d90>]}
+00:40:52.080254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f505a0d7d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f505a0d7f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f505a0d7280>]}
+
+
+============================== 2023-02-28 00:41:27.197722 | c946931c-d495-4b4d-95ce-854f7fc899c0 ==============================
+[0m00:41:27.197722 [info ] [MainThread]: Running with dbt=1.4.1
+[0m00:41:27.200169 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m00:41:27.200475 [debug] [MainThread]: Tracking: tracking
+[0m00:41:27.227083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d781eb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d781ebcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d781eba00>]}
+[0m00:42:13.877046 [info ] [MainThread]: A project called taxi_rides_ny already exists here.
+[0m00:42:13.877834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d781eb280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d781eaf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d781eb730>]}
+[0m00:42:13.878356 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-28 00:43:30.706088 | f4ebda23-af51-4152-8305-7d1e187bab21 ==============================
+[0m00:43:30.706088 [info ] [MainThread]: Running with dbt=1.4.1
+[0m00:43:30.709267 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m00:43:30.709627 [debug] [MainThread]: Tracking: tracking
+[0m00:43:30.712062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2b36c3ba60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2b36c386a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2b36c3aef0>]}
+[0m00:43:38.715216 [info ] [MainThread]: A project called taxi_rides_ny already exists here.
+[0m00:43:38.716040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2b36c3baf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2b36c3bcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2b36c3ada0>]}
+[0m00:43:38.716538 [debug] [MainThread]: Flushing usage events
