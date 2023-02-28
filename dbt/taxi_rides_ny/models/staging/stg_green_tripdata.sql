@@ -13,7 +13,7 @@ WITH tripdata AS (
 )
 SELECT
     -- Identifiers
-    {{ dbt_utils.surrogate_key(['vendorid', 'lpep_pickup_datetime']) }} AS trip_id
+    {{ dbt_utils.generate_surrogate_key(['vendorid', 'lpep_pickup_datetime']) }} AS trip_id
     ,vendorid AS vendor_id
     ,ratecodeid AS rate_code_id
     ,pulocationid AS pickup_location_id
