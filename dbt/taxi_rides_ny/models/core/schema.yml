@@ -9,8 +9,8 @@ metrics:
     calculation_method: count
     expression: vendor_id
 
-    timestamp: pickup_datetime
-    time_grains: [year]
+    # timestamp: pickup_datetime
+    # time_grains: [month, quarter, year]
 
     tags:
     - piperider
