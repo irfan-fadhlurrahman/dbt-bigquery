@@ -1,0 +1,5 @@
+piperider[bigquery]
+dbt-core 
+dbt-bigquery 
+sqlalchemy
+pybigquery

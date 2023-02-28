@@ -12,10 +12,10 @@ python -m venv ./venv
 echo "Activate Virtual Environment"; sleep 2
 source ./venv/bin/activate
 
-# NOTES: Use sqlalchemy version 1.3.18 to avoid connection error
+# NOTES: Use python 3.9 to avoid error
 echo "Install necessary packages"; sleep 2
 pip install -U pip
-pip install 'piperider[bigquery]' dbt-core dbt-bigquery sqlalchemy==1.3.18
+pip install 'piperider[bigquery]' dbt-core dbt-bigquery sqlalchemy pybigquery
 
 echo "Install dbt packages and build dbt models"; sleep 2
 cd ~/piperider-dbt-bq/dbt/taxi_rides_ny

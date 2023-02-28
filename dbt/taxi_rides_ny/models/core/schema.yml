@@ -1,0 +1,14 @@
+metrics:
+  - name: vendor_id_distribution
+    label: Vendor ID Distribution
+    model: ref('fact_trips')
+    description: "The count of each Vendor ID"
+
+    calculation_method: count
+    expression: vendor_id
+
+    timestamp: pickup_datetime
+    time_grains: [year]
+
+    tags:
+    - piperider
