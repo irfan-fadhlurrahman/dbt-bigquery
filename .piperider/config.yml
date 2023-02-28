@@ -1,0 +1,13 @@
+dataSources: []
+dbt:
+  projectDir: dbt/taxi_rides_ny
+  # tag: 'piperider'
+
+profiler:
+#   table:
+#     # the maximum row count to profile. (Default unlimited)
+#     limit: 1000000
+#     duplicateRows: false
+
+telemetry:
+  id: 923bcd994bb54827b8431eb73d448e32

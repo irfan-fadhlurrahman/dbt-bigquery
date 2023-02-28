@@ -15,19 +15,15 @@
 # echo "Edit profiles.yml as per your GCP account information"
 # sleep 3
 
-# echo "Build an image"
-# sleep 3
+# echo "Build an image"; sleep 3
 # docker-compose build
 # docker-compose run dbt-bq-dtc init
 
 # https://stackoverflow.com/questions/66496890/vs-code-nopermissions-filesystemerror-error-eacces-permission-denied
-# echo "Edit permissions of dbt folder"
-# sleep 3
-# sudo chown -R irfanfadh43 /home/irfanfadh43/dbt_bigquery/dbt/taxi_rides_ny/
+# echo "Edit permissions of dbt folder"; sleep 3
+# sudo chown -R irfanfadh43 /home/irfanfadh43/piperider-dbt-bq/dbt/taxi_rides_ny/
 
-# echo "Test dbt connection"
-# sleep 3
-# cd ~/dbt_bigquery
+# echo "Test dbt connection"; sleep 3
 # docker-compose run --workdir="//usr/app/dbt/taxi_rides_ny" dbt-bq-dtc debug
 
 # echo "Shell output must be 'All checks passed!'"

@@ -1,5 +1,5 @@
 ##
-#  Generic dockerfile for dbt image building.  
+#  Generic dockerfile for dbt image building.
 #  See README for operational details
 ##
 
@@ -9,17 +9,17 @@ ARG build_for=linux/amd64
 ##
 # base image (abstract)
 ##
-FROM --platform=$build_for python:3.9.9-slim-bullseye as base
+FROM --platform=$build_for python:3.10.7-slim-bullseye as base
 
 # N.B. The refs updated automagically every release via bumpversion
 # N.B. dbt-postgres is currently found in the core codebase so a value of dbt-core@<some_version> is correct
 
-ARG dbt_core_ref=dbt-core@v1.0.1
-ARG dbt_postgres_ref=dbt-core@v1.0.1
-ARG dbt_redshift_ref=dbt-redshift@v1.0.0
-ARG dbt_bigquery_ref=dbt-bigquery@v1.0.0
-ARG dbt_snowflake_ref=dbt-snowflake@v1.0.0
-ARG dbt_spark_ref=dbt-spark@v1.0.0
+ARG dbt_core_ref=dbt-core@v1.4.2rc1
+ARG dbt_postgres_ref=dbt-core@v1.4.2rc1
+ARG dbt_redshift_ref=dbt-redshift@v1.4.0
+ARG dbt_bigquery_ref=dbt-bigquery@v1.4.0
+ARG dbt_snowflake_ref=dbt-snowflake@v1.4.0
+ARG dbt_spark_ref=dbt-spark@v1.4.0
 # special case args
 ARG dbt_spark_version=all
 ARG dbt_third_party
@@ -132,3 +132,6 @@ RUN apt-get update \
   RUN python -m pip install --no-cache "git+https://github.com/dbt-labs/${dbt_snowflake_ref}#egg=dbt-snowflake"
   RUN python -m pip install --no-cache "git+https://github.com/dbt-labs/${dbt_spark_ref}#egg=dbt-spark[${dbt_spark_version}]"
   RUN python -m pip install --no-cache "git+https://github.com/dbt-labs/${dbt_postgres_ref}#egg=dbt-postgres&subdirectory=plugins/postgres"
+
+  # ADDED: piperider[bigquery]
+  # RUN python -m pip install --no-cache "piperider[bigquery]"
