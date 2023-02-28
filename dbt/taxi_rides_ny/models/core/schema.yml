@@ -1,3 +1,5 @@
+version: 2
+
 metrics:
   - name: vendor_id_distribution
     label: Vendor ID Distribution
